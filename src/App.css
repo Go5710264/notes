@@ -1,0 +1,55 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/*  */
+
+.header-notes{
+  display: flex;
+  align-items: center;
+
+}
+
+.header-heading{
+  margin: 0;
+}
+
+.button-icon{
+  box-sizing: content-box;
+  height: 23.5px;
+
+  margin-left: 20px;
+}
+
+.icon{
+  width: 17px;
+
+  margin: 0;
+  padding: 0;
+  padding-top: 3px;
+
+  background-color: #EFEFEF;
+}
+
+.note-wrapper{
+  width: 240px;
+  height: 155px;
+  box-sizing: border-box;
+
+  border: 0.5px solid black;
+
+  padding: 5px;
+}
+
+.note-text{
+  height: 100%;
+  margin: 0;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
