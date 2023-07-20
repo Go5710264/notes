@@ -27,8 +27,15 @@ function App() {
       <ListNotes notes={notes}/>
 
       <footer>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <button className='button-icon'>
+        {/* <textarea name="" id="" cols="30" rows="10"></textarea> */}
+        <input 
+          type="text"
+          className='input-text' 
+        />
+        <button 
+          className='button-icon'
+          onClick={() => sendNote()}  
+        >
           <img 
             src={send} 
             className='icon' />
