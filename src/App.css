@@ -10,7 +10,7 @@
 .header-notes{
   display: flex;
   align-items: center;
-
+  justify-content: center;
 }
 
 .header-heading{
@@ -24,6 +24,12 @@
   margin-left: 20px;
 }
 
+.button-icon:hover{
+  background-color: #EFEFEF;
+  border: #767676 solid 1.6px;
+  border-radius: 1.2px;
+}
+
 .icon{
   width: 17px;
 
@@ -34,14 +40,39 @@
   background-color: #EFEFEF;
 }
 
+.icon.close{
+  width: 25px;
+  position: absolute;
+  right: -12.5px;
+  top: -16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.block-notes{
+  display: flex;
+  max-width: 750px;
+
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
 .note-wrapper{
   width: 240px;
   height: 155px;
+  margin-top: 20px;
+  margin-right: 15px;
   box-sizing: border-box;
 
   border: 0.5px solid black;
 
   padding: 5px;
+
+  position: relative;
+}
+
+.note-wrapper:nth-child(3n){
+  margin-right: 0;
 }
 
 .note-text{
@@ -54,7 +85,17 @@
   overflow: hidden;
 }
 
+.footer-notes{
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-form-notes{
+  display: flex;
+}
+
 .input-text{
   width: 200px;
-  /* height: 150px; */
 }

@@ -1,12 +1,9 @@
 import Note from "./Note"
 
-const ListNotes = ({ notes }) => {
-    console.log(notes)
+const ListNotes = ({notes , removeElement}) => {
     return (
-        <main>
-            {/* <ul> */}
-                {notes.map(item => <Note key={item.id} textNote={item.textNote}/>)}
-            {/* </ul> */}
+        <main className="block-notes">
+            {notes.map(item => <Note key={item.id} item={item} removeElement={removeElement}/>)}
         </main>
     )
 }
